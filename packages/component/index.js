@@ -1,5 +1,5 @@
 // 导入组件，组件必须声明 name
-import component from './src/index.vue'
+import component from './src/component.vue'
 
 // 为组件提供 install 安装方法，供按需引入
 component.install = function (Vue) {
