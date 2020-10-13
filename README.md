@@ -6,3 +6,4 @@
 * normalize.css v8.0.1
 * Font Awesome Free 5.15.1
 * Bootstrap v4.5.0 (需要主动引入)
+* animate.css 4.14

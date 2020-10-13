@@ -1,12 +1,12 @@
 <template>
   <div class="no-modal">
     <!-- 弹出层 -->
-    <transition name="fade">
-      <div
-        class="modal"
-        :style="{ display: visible ? 'block' : 'none' }"
-        @click.self="close"
-      >
+    <transition
+      name="animated"
+      enter-active-class="animated tada"
+      leave-active-class="animated bounceOutRight"
+    >
+      <div class="modal" v-show="visible" @click.self="close">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -75,16 +75,6 @@ export default {
     &:hover {
       cursor: pointer;
     }
-  }
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: transform 0.3s ease-out;
-    transform: translate(0, -50px);
-  }
-
-  .fade-enter,
-  .fade-leave-to {
-    transform: none;
   }
 }
 </style>

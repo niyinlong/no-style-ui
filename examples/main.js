@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import noStyleUI from "../packages/index";
+
 Vue.use(noStyleUI);
 
 Vue.config.productionTip = false

@@ -1,9 +1,11 @@
-import "./style/style.less";
-
 import button from "./no-button";
 import buttonGroup from "./no-button-group";
 import modal from "./no-modal";
 
+import "./style/bootstrap.css";
+import "./style/normalize.css";
+import "./style/animate.css";
+import "./style/fontawesome.css";
 // 存储组件列表
 const components = [
     button,

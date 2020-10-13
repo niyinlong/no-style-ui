@@ -26,5 +26,4 @@ export default {
 </script>
 
 <style lang="less">
-@import url("../packages/style/bootstrap.css");
 </style>
