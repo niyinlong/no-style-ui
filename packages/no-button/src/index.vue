@@ -1,9 +1,9 @@
 <template>
   <button
-    type="button"
     class="no-button"
     :class="className"
     :disabled="disabled"
+    @click="(e) => $emit('click', e)"
   >
     <i v-if="loading" class="fa fa-spinner fa-pulse"></i>
     <i v-else-if="icon" class="fa" :class="icon"></i>
@@ -53,6 +53,7 @@ export default {
   data() {
     return {};
   },
+  methods: {},
   computed: {
     className() {
       let style = ["btn"];

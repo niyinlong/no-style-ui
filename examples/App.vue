@@ -1,12 +1,14 @@
 <template>
   <div id="app">
   
-    <no-button icon="fa-user" type="primary">12345</no-button>
-    <no-button icon="fa-user" type="primary" :disabled="false" @click="onClick"
-      >弹窗{{ show }}</no-button>
-    <div @click="show=!show;">{{show}}</div>
-    <no-modal :visible.sync="show" title="标题"> 弹窗内容 </no-modal>
-    <router-view />
+   <no-table>
+
+     <no-table-column prop="name">
+       <template >12334</template>
+     </no-table-column>
+
+   </no-table>
+   
   </div>
 </template>
 

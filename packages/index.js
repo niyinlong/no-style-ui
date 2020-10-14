@@ -1,6 +1,8 @@
 import button from "./no-button";
 import buttonGroup from "./no-button-group";
 import modal from "./no-modal";
+import table from "./no-table";
+import tableColumn from "./no-table-column";
 
 import "./style/bootstrap.css";
 import "./style/normalize.css";
@@ -10,7 +12,9 @@ import "./style/fontawesome.css";
 const components = [
     button,
     buttonGroup,
-    modal
+    modal,
+    table,
+    tableColumn
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
