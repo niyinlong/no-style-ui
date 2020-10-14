@@ -3,6 +3,7 @@ import buttonGroup from "./no-button-group";
 import modal from "./no-modal";
 import table from "./no-table";
 import tableColumn from "./no-table-column";
+import message from "./no-message";
 
 import "./style/bootstrap.css";
 import "./style/normalize.css";
@@ -22,7 +23,14 @@ const install = function (Vue) {
     // 判断是否安装
     if (install.installed) return
     // 遍历注册全局组件
-    components.map(component => Vue.component(component.name, component))
+    components.map(component => Vue.component(component.name, component));
+
+    const Message = Vue.extend(message);
+    Vue.prototype.$Message =  (options = {})=> {
+        let instance = new Message(options).$mount();
+        document.body.appendChild(instance.$el); // 动态插入
+        return instance;
+    }
 }
 
 // 判断是否是直接引入文件

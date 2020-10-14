@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-  
-   <no-table>
-
-     <no-table-column prop="name">
-       <template >12334</template>
-     </no-table-column>
-
-   </no-table>
-   
+    <button @click="showMessage">showMessage</button>
   </div>
 </template>
 
@@ -20,9 +12,12 @@ export default {
     };
   },
   methods:{
-    onClick(e){
-      console.log(e);
+    showMessage(e){
+     this.$Message({message:'1234',type:'danger'});
     }
+  },
+  created(){
+    // 
   }
 };
 </script>
