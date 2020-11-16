@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <no-editor />
     <button @click="showMessage">showMessage</button>
   </div>
 </template>

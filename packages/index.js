@@ -4,6 +4,7 @@ import modal from "./no-modal";
 import table from "./no-table";
 import tableColumn from "./no-table-column";
 import message from "./no-message";
+import editor from "./no-editor";
 
 import "./style/bootstrap.css";
 import "./style/normalize.css";
@@ -15,7 +16,8 @@ const components = [
     buttonGroup,
     modal,
     table,
-    tableColumn
+    tableColumn,
+    editor
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
